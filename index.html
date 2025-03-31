@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Рандомайзер</title>
 </head>
 <body>
-    
+    <div class="randomizer__wrapper">
+        <div class="randomizer__container">
+            <div class="container__header">
+                <h1 class="header__title">Рандомайзер</h1>
+                <h3 class="header__description">Самый простой, самый минималистичный</h3>
+                <h3 class="header__instruction">Просто введи числовой диапазон</h3>
+            </div>
+            <div class="container__main">
+                <div class="main__input-group">
+                <label class="main__from" for="input__from">От</label> 
+                <input type="number" id="input__from"/>
+                <label class="main__to" for="input__to">До</label> 
+                <input type="number" id="input__to"/>
+                </div>
+            </div>
+            <div class="container__footer">
+                <button class="footer__button" type="button" id="footer__button">Получить рандомное число</button>
+                <div class="footer__result" id="footer__result"></div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
